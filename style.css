@@ -2376,3 +2376,41 @@ html,body{
 max-width:100%;
 overflow-x:hidden;
 }
+@media (max-width:768px){
+
+.products{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+padding:10px;
+}
+
+.product img{
+height:250px;
+object-fit:cover;
+}
+
+}
+.product img{
+width:100%;
+height:260px;
+object-fit:contain;
+
+}
+@media (max-width:768px){
+
+.product-details{
+flex-direction:column;
+}
+
+.product-images img{
+width:100%;
+}
+
+.product-info{
+margin-top:20px;
+}
+  .products{
+gap:12px;
+}
+
+}
