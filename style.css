@@ -2414,3 +2414,27 @@ gap:12px;
 }
 
 }
+.product-details{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:20px;
+padding:20px;
+}
+
+.product-images{
+width:100%;
+text-align:center;
+}
+
+.product-images img{
+width:100%;
+max-width:400px;
+height:auto;
+}
+
+.product-info{
+width:100%;
+max-width:400px;
+text-align:center;
+}
