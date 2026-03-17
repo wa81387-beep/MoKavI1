@@ -3098,3 +3098,7 @@ font-size:18px !important;
 }
 
 }
+.container{
+max-width:100% !important;
+width:100% !important;
+}
