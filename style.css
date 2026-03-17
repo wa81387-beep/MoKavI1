@@ -2817,3 +2817,129 @@ text-align:center !important;
 }
 
 }
+
+
+/* 📱 تحسين المسافات + تكبير العناصر للموبايل */
+@media (max-width:768px){
+
+/* صفحة التفاصيل */
+.product-details{
+padding:10px !important;
+gap:10px !important;
+}
+
+/* الصورة */
+.product-images img{
+width:100% !important;
+max-width:100% !important;
+border-radius:12px;
+}
+
+/* العنوان */
+.product-info h2{
+font-size:20px;
+margin:5px 0;
+}
+
+/* السعر */
+.price{
+font-size:18px;
+}
+
+/* المقاسات */
+.sizes{
+gap:6px !important;
+}
+
+.size-btn{
+padding:8px 12px;
+font-size:14px;
+}
+
+/* الكمية + الزرار */
+.cart-row{
+gap:8px !important;
+}
+
+/* زرار الكارت */
+.add-cart{
+width:100% !important;
+font-size:16px;
+padding:12px;
+}
+
+/* الوصف */
+.desc{
+font-size:13px;
+padding:0 5px;
+}
+
+/* ===== 🛒 صفحة الكارت ===== */
+
+#cart-items{
+padding:10px !important;
+}
+
+/* كل منتج */
+.cart-item{
+width:100% !important;
+display:flex;
+align-items:center;
+gap:10px;
+padding:10px;
+margin-bottom:10px;
+border-radius:12px;
+background:#fff;
+}
+
+/* صورة المنتج */
+.cart-item img{
+width:80px !important;
+height:80px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* النص */
+.cart-item h3{
+font-size:14px;
+margin:0;
+}
+
+.cart-item p{
+font-size:13px;
+margin:2px 0;
+}
+
+/* الكمية */
+.qty-box{
+display:flex;
+align-items:center;
+gap:5px;
+}
+
+/* زرار remove */
+.cart-item button{
+font-size:12px;
+padding:5px 8px;
+}
+
+/* الإجمالي */
+.cart-summary{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:#fff;
+padding:15px;
+box-shadow:0 -5px 15px rgba(0,0,0,0.1);
+}
+
+/* زرار checkout */
+.cart-summary button{
+width:100%;
+padding:12px;
+font-size:16px;
+}
+
+}
