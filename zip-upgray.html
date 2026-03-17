@@ -54,132 +54,66 @@
 </section>
 <script>
 
+let qty = 1;
+let selectedSize = "";
 
-function goToOrder(){
-    if (selectedSize === "") {
-        alert("اختاري المقاس الأول");
-        return;
-    }
-
-    localStorage.setItem("selectedProduct", "gray Zip-Up");
-    localStorage.setItem("selectedSize", selectedSize);
-    localStorage.setItem("selectedQty", qty);
-
-    window.location.href = "contact.html";
-    function goToOrder(){
-    if (selectedSize === "") {
-        alert("اختاري المقاس الأول");
-        return;
-    }
-
-    localStorage.setItem("selectedProduct", "gray Zip-Up");
-    localStorage.setItem("selectedSize", selectedSize);
-    localStorage.setItem("selectedQty", qty);
-
-    window.location.href = "contact.html";
-}
-}
-function selectSize(el) {
-  document.querySelectorAll(".size").forEach(s => s.classList.remove("active"));
-  el.classList.add("active");
-  selectedSize = el.innerText;
-}
-
-function changeQty(val) {
-  qty += val;
-  if (qty < 1) qty = 1;
-  document.getElementById("qty").innerText = qty;
-}
-
-function addToCart() {
-  if (selectedSize === "") {
-    alert("اختاري المقاس");
-    return;
-  }
-
-  let product = {
-    name: "zip-up gray",
-    price: 650,
-    size: selectedSize,
-    qty: qty,
-    image: "zip-upgray.jpg"
-  };
-
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  cart.push(product);
-  localStorage.setItem("cart", JSON.stringify(cart));
-
-  window.location.href = "cart.html";
-}
 let sizes = document.querySelectorAll(".size-btn");
 
 sizes.forEach(btn=>{
   btn.addEventListener("click", function(){
+
+    if(this.classList.contains("sold")){
+      return;
+    }
+
     sizes.forEach(b=>b.classList.remove("active"));
     this.classList.add("active");
+    selectedSize = this.innerText;
+
   });
 });
 
-let qty = 1;
 let qtyNumber = document.querySelector(".qty-box span");
 let plus = document.querySelector(".qty-box button:last-child");
 let minus = document.querySelector(".qty-box button:first-child");
 
-plus.addEventListener("click", function(){
+plus.onclick = function(){
   qty++;
   qtyNumber.innerText = qty;
-});
+}
 
-minus.addEventListener("click", function(){
+minus.onclick = function(){
   if(qty > 1){
     qty--;
     qtyNumber.innerText = qty;
   }
-});
+}
 
-</script>
-<script>
-document.querySelector(".add-cart").addEventListener("click", function(){
+document.querySelector(".add-cart").onclick = function(){
 
-  let selectedSize = document.querySelector(".size-btn.active");
-
-  if(!selectedSize){
+  if(selectedSize === ""){
     alert("اختاري المقاس الأول");
     return;
   }
 
   let product = {
-    name: "zip-up gray",
+    name: "ZIP-UP GRAY",
     price: 650,
     image: "zip-upgray.jpg",
-    size: selectedSize.innerText,
+    size: selectedSize,
     qty: qty
   };
 
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
   cart.push(product);
-  localStorage.setItem("cart", JSON.stringify(cart));
 
-  alert("تم إضافة المنتج للكارت ✅");
-});
-
-</script>
-<script>
-document.querySelector(".add-cart").addEventListener("click", function(){
-
-  let product = {
-    name :"zip-up gray",
-    price: 650,
-    image: "zip-upgray.jpg",
-    qty: 1
-  };
-
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  cart.push(product);
   localStorage.setItem("cart", JSON.stringify(cart));
 
   window.location.href = "cart.html";
-});
+
+}
+
 </script>
 </body>
 </html>
