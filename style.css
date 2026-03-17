@@ -2773,3 +2773,47 @@ padding:0 10px;
 }
 
 }
+
+
+/* 🔥 توحيد عرض كل صفحات التفاصيل */
+.product-details{
+width:100% !important;
+max-width:100% !important;
+margin:0 auto !important;
+padding:20px !important;
+box-sizing:border-box;
+}
+
+/* نشيل أي قيود عرض */
+.product-info,
+.product-images{
+max-width:100% !important;
+width:100% !important;
+}
+
+/* الصورة تكبر */
+.product-images img{
+width:100% !important;
+max-width:400px !important;
+height:auto !important;
+display:block;
+margin:auto;
+}
+
+/* الموبايل */
+@media (max-width:768px){
+
+.product-details{
+padding:15px !important;
+}
+
+.product-images img{
+width:95% !important;
+max-width:100% !important;
+}
+
+.product-info{
+text-align:center !important;
+}
+
+}
