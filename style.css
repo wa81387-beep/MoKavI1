@@ -2714,14 +2714,14 @@ width:100% !important;
 }
 
 
-/* ===== FIX PRODUCT DETAILS FINAL ===== */
+/* 📱 تحسين صفحات التفاصيل للموبايل */
+@media (max-width: 768px){
+
 .product-details{
 display:flex !important;
 flex-direction:column !important;
 align-items:center !important;
-padding:20px !important;
-gap:20px !important;
-width:100% !important;
+padding:15px !important;
 }
 
 /* الصورة */
@@ -2732,17 +2732,15 @@ justify-content:center !important;
 }
 
 .product-images img{
-width:90% !important;
-max-width:350px !important;
+width:95% !important;
+max-width:100% !important;
 height:auto !important;
-object-fit:contain !important;
-border-radius:15px !important;
+border-radius:15px;
 }
 
-/* التفاصيل */
+/* المعلومات تحت الصورة */
 .product-info{
 width:100% !important;
-max-width:350px !important;
 text-align:center !important;
 }
 
@@ -2751,19 +2749,27 @@ text-align:center !important;
 display:flex !important;
 justify-content:center !important;
 flex-wrap:wrap !important;
-gap:10px !important;
+gap:8px;
 }
 
-/* الكمية + الزرار */
+/* الكمية والزرار */
 .cart-row{
 display:flex !important;
-justify-content:center !important;
-gap:10px !important;
-flex-wrap:wrap !important;
+flex-direction:column !important;
+align-items:center !important;
+gap:10px;
 }
 
-/* زرار */
+/* زرار الكارت */
 .add-cart{
-width:100% !important;
-max-width:250px !important;
+width:90%;
+}
+
+/* الوصف */
+.desc{
+font-size:14px;
+line-height:1.6;
+padding:0 10px;
+}
+
 }
