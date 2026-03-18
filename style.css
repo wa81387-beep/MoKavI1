@@ -3102,3 +3102,35 @@ font-size:18px !important;
 max-width:100% !important;
 width:100% !important;
 }
+/* 📱 تكبير صفحة الشنطة بالكامل */
+@media (max-width:768px){
+
+/* نشيل أي حدود للصفحة */
+body{
+margin:0 !important;
+padding:0 !important;
+}
+
+/* الصفحة تاخد الشاشة كلها */
+#cart-items{
+width:100% !important;
+max-width:100% !important;
+margin:0 !important;
+padding:10px !important;
+}
+
+/* الكارت نفسه */
+.cart-item{
+width:100% !important;
+max-width:100% !important;
+margin:0 0 15px 0 !important;
+}
+
+/* الجزء السفلي */
+.cart-summary{
+width:100% !important;
+left:0 !important;
+right:0 !important;
+}
+
+}
