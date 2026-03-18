@@ -3134,3 +3134,12 @@ right:0 !important;
 }
 
 }
+/* كسر أي container بيصغر الصفحة */
+.container,
+.wrapper,
+main,
+section{
+max-width:100% !important;
+width:100% !important;
+padding:0 10px !important;
+}
