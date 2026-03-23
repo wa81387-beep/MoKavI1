@@ -3235,3 +3235,82 @@ font-size:16px !important;
 }
 
 }
+/* 🔥 FIX نهائي للتفاصيل + التواصل */
+@media (max-width:768px){
+
+/* ===== صفحة التفاصيل ===== */
+.product-details{
+width:100% !important;
+padding:15px !important;
+text-align:center !important;
+}
+
+/* الصورة */
+.product-images img{
+width:100% !important;
+max-width:100% !important;
+border-radius:15px;
+}
+
+/* الاسم */
+.product-info h2{
+font-size:22px !important;
+margin:10px 0 !important;
+}
+
+/* السعر */
+.price{
+font-size:20px !important;
+margin:8px 0 !important;
+}
+
+/* المقاسات */
+.size-btn{
+padding:10px 18px !important;
+font-size:15px !important;
+}
+
+/* الكمية */
+.qty-box button{
+font-size:18px !important;
+padding:6px 12px !important;
+}
+
+.qty-box span{
+font-size:17px !important;
+}
+
+/* زرار */
+.add-cart{
+font-size:17px !important;
+padding:14px !important;
+}
+
+/* الوصف */
+.desc{
+font-size:15px !important;
+line-height:1.8 !important;
+padding:0 5px !important;
+}
+
+/* ===== صفحة التواصل ===== */
+#order-form{
+width:100% !important;
+max-width:100% !important;
+padding:20px 12px !important;
+margin:0 !important;
+}
+
+/* الانبوت */
+#order-form input{
+font-size:16px !important;
+padding:14px !important;
+}
+
+/* الزرار */
+#order-form button{
+font-size:17px !important;
+padding:14px !important;
+}
+
+}
