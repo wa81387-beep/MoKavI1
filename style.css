@@ -3314,3 +3314,90 @@ padding:14px !important;
 }
 
 }
+/* 💣 FIX نهائي للكارت + التواصل فقط */
+@media (max-width:768px){
+
+/* ===== 🛒 صفحة الشنطة ===== */
+
+/* نخلي الصفحة تملى الشاشة */
+#cart-items{
+width:100% !important;
+max-width:100% !important;
+margin:0 !important;
+padding:15px !important;
+}
+
+/* كل منتج */
+.cart-item{
+width:100% !important;
+display:flex !important;
+align-items:center !important;
+gap:12px !important;
+padding:12px !important;
+margin-bottom:12px !important;
+background:#fff;
+border-radius:12px;
+}
+
+/* الصورة */
+.cart-item img{
+width:95px !important;
+height:95px !important;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* النص */
+.cart-item h3{
+font-size:15px !important;
+}
+
+.cart-item p{
+font-size:13px !important;
+}
+
+/* الجزء السفلي */
+.cart-summary{
+position:fixed !important;
+bottom:0;
+left:0;
+width:100% !important;
+background:#fff;
+padding:15px !important;
+}
+
+/* زرار */
+.cart-summary button{
+width:100% !important;
+padding:14px !important;
+font-size:16px !important;
+}
+
+
+/* ===== 📩 صفحة التواصل ===== */
+
+#order-form{
+width:100% !important;
+max-width:100% !important;
+margin:0 !important;
+padding:20px 12px !important;
+border-radius:0 !important;
+box-shadow:none !important;
+}
+
+/* الانبوت */
+#order-form input{
+width:100% !important;
+padding:14px !important;
+font-size:16px !important;
+margin-bottom:10px !important;
+}
+
+/* الزرار */
+#order-form button{
+width:100% !important;
+padding:14px !important;
+font-size:16px !important;
+}
+
+}
