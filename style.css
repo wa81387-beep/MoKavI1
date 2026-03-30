@@ -3425,3 +3425,14 @@ font-size:16px !important;
     padding: 15px;
   }
 }
+
+
+@media (max-width: 600px) {
+  .cart-details, .product-description {
+    font-size: 16px; /* أو أكبر حسب راحتك */
+    line-height: 1.5;
+  }
+  .cart-container {
+    padding: 15px;
+  }
+}
