@@ -3439,38 +3439,3 @@ font-size:16px !important;
 
 
 
-/* افتراضي للكمبيوتر: كل الصفوف 3 منتجات */
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-/* كل المنتجات عادي */
-.product {
-  flex: 1 1 30%; /* 3 منتجات في الصف */
-}
-
-/* صفحات المنتجات كلها على الموبايل: منتجين في كل صف */
-@media (max-width: 600px) {
-  .products:not(.pants-page) .product {
-    flex: 1 1 48%; /* منتجين في الصف */
-    margin-bottom: 10px;
-  }
-
-  /* صفحة البناطيل فقط */
-  .pants-page .product {
-    flex: 1 1 100%; /* منتج واحد في الصف */
-    margin-bottom: 10px;
-  }
-  
-  .products {
-    gap: 4%;
-  }
-
-  /* الصور متناسبة */
-  .product img {
-    width: 100%;
-    height: auto;
-  }
-}
