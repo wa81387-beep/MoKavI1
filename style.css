@@ -3436,3 +3436,26 @@ font-size:16px !important;
     padding: 15px;
   }
 }
+
+
+
+/* الصفحة الافتراضية للكمبيوتر */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.product {
+  flex: 1 1 30%; /* 3 منتجات في الصف على الكمبيوتر */
+}
+
+/* للموبايل - منتجين في كل صف */
+@media (max-width: 600px) {
+  .product {
+    flex: 1 1 48%; /* كل منتجين في الصف */
+    margin-bottom: 10px; /* مسافة بين الصفوف */
+  }
+  .products {
+    gap: 4%; /* مسافة صغيرة بين المنتجين */
+  }
+}
