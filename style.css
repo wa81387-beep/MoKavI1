@@ -3461,5 +3461,42 @@ font-size:16px !important;
     font-size: 16px;
   }
 }
+/* حل قوي لصفحة الكارت على الموبايل */
+@media (max-width: 600px) {
 
+  .cart-container {
+    width: 85% !important;
+    max-width: 350px !important;
+    margin: 20px auto !important;
+    padding: 10px !important;
+  }
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cart-item img {
+    width: 70px !important;
+    height: auto;
+  }
+
+  .cart-item h3 {
+    font-size: 13px !important;
+  }
+
+  .cart-item p {
+    font-size: 12px !important;
+  }
+
+  .cart-total {
+    font-size: 14px !important;
+  }
+
+  .order-btn, .checkout-btn {
+    font-size: 14px !important;
+    padding: 8px !important;
+  }
+}
 
