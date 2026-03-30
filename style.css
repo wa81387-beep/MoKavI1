@@ -3098,6 +3098,38 @@ font-size:18px !important;
 }
 
 }
+/* لو عندك الصورة في div أو section محدد، مثال: .hero img */
+.hero img {
+  width: 100%;
+  height: 100vh; /* تغطي كامل شاشة الموبايل */
+  object-fit: cover; /* تحافظ على النسبة بدون تشويه */
+  display: block;
+}
+
+/* لو حابة تضيفي Overlay على الصورة */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2); /* optional */
+}
+
+/* على الموبايل فقط */
+@media (max-width: 600px) {
+  .hero img {
+    height: 100vh; /* تأكد من تغطية الشاشة بالكامل */
+  }
+  
+  /* تعديل أي Padding أو Margin للـ header أو navbar */
+  .navbar {
+    padding: 10px 15px;
+  }
+}
+
+
 .container{
 max-width:100% !important;
 width:100% !important;
