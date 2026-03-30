@@ -3500,3 +3500,103 @@ font-size:16px !important;
   }
 }
 
+
+
+
+
+/* ===== الكارت كامل ===== */
+#cart-items {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* كل منتج */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+/* صورة المنتج */
+.cart-item img {
+  width: 80px;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* خلي النصوص جنب الصورة */
+.cart-item h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.cart-item p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+/* الكمية */
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.qty-box button {
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+/* زرار الحذف */
+.cart-item button {
+  margin-left: auto;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* ===== الملخص ===== */
+.cart-summary {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.cart-summary button {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== الموبايل ===== */
+@media (max-width: 600px) {
+
+  #cart-items {
+    max-width: 90%;
+  }
+
+  .cart-item {
+    gap: 10px;
+  }
+
+  .cart-item img {
+    width: 60px; /* تصغير الصورة */
+  }
+
+  .cart-item h3 {
+    font-size: 14px;
+  }
+
+  .cart-item p {
+    font-size: 12px;
+  }
+
+  .cart-summary {
+    max-width: 90%;
+  }
+}
