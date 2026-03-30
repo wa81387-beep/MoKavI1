@@ -2,9 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> sweet pants</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sweet Pants | MoKavi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ===== صفحة البناطيل ===== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .cart-icon {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #000;
+      position: relative;
+    }
+
+    .cart-count {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background-color: red;
+      color: #fff;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+    }
+
+    .side-menu {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 200px;
+      background: #fff;
+      border-right: 1px solid #ddd;
+      padding-top: 60px;
+      z-index: 99;
+    }
+
+    .side-menu.active {
+      display: flex;
+    }
+
+    .side-menu a {
+      padding: 15px;
+      text-decoration: none;
+      color: #000;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .menu-btn {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Title */
+    .category-header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .category-header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .category-header p {
+      margin: 5px 0 0 0;
+      color: #555;
+    }
+
+    /* Products */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0 20px 20px 20px;
+    }
+
+    .product {
+      flex: 1 1 30%; /* 3 منتجات في الصف على الكمبيوتر */
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 8px;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px 0;
+      font-size: 18px;
+    }
+
+    .product .price {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    .product .price .old-price {
+      text-decoration: line-through;
+      color: #999;
+      margin-right: 5px;
+    }
+
+    .product .price .new-price {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+
+    .product .order {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* ===== Responsive للموبايل ===== */
+    @media (max-width: 600px) {
+      .product {
+        flex: 1 1 48%; /* 2 منتجات في الصف */
+        margin-bottom: 10px;
+      }
+
+      .products {
+        gap: 4%;
+      }
+
+      .product h3,
+      .product .price,
+      .product .order {
+        font-size: 16px;
+        line-height: 1.4;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -17,7 +182,7 @@
 
   <div class="nav-logo">MoKavi</div>
 
-   <div class="nav-right">
+  <div class="nav-right">
     <a href="cart.html" class="cart-icon">
       <svg viewBox="0 0 24 24">
         <path d="M7 6V5a5 5 0 0 1 10 0v1M4 8h16l-1.5 13h-13L4 8z"/>
@@ -32,7 +197,7 @@
   <a href="index.html">SHOP</a>
   <a href="hoodie.html">HOODIES</a>
   <a href="zip-up.html">ZIP-UP</a>
-  <a href="sweet pants.html">SWEATPANTS</a>
+  <a href="sweetpants.html">SWEATPANTS</a>
   <a href="tshirt.html">T-SHIRT</a>
 </div>
 
@@ -41,59 +206,52 @@
   <h1>SWEATPANTS</h1>
   <p>Essential streetwear made to stand out</p>
 </div>
+
 <!-- ===== PRODUCTS ===== -->
-<section class="shop">
+<section class="products">
 
   <!-- Product 1 -->
   <div class="product">
-    
+    <a href="sweetpantsblack.html">
       <div class="image-box">
-        
-        <img src="blackpant.jpg">
+        <img src="blackpant.jpg" alt="Black Pant">
       </div>
     </a>
-
     <h3>BLACK PANT</h3>
     <p class="price">
       <span class="old-price">550 LE</span>
       <span class="new-price">450 LE</span>
     </p>
-
     <a class="order" href="sweetpantsblack.html">ORDER</a>
   </div>
 
   <!-- Product 2 -->
   <div class="product">
-    <a href="brrown.html"></a>
+    <a href="brrown.html">
       <div class="image-box">
-       
-        <img src="pantbrrown.jpg">
+        <img src="pantbrrown.jpg" alt="Brrown Pant">
       </div>
     </a>
-
-    <h3>BRROWN  PANT</h3>
+    <h3>BRROWN PANT</h3>
     <p class="price">
       <span class="old-price">550 LE</span>
       <span class="new-price">450 LE</span>
     </p>
-
     <a class="order" href="brrown.html">ORDER</a>
   </div>
 
+  <!-- Product 3 -->
   <div class="product">
-    <a href="pantgray.html"></a>
+    <a href="pantsgray.html">
       <div class="image-box">
-        
-        <img src="pantgray.jpg">
+        <img src="pantgray.jpg" alt="Grey Pant">
       </div>
     </a>
-
-    <h3> GREY PANT</h3>
+    <h3>GREY PANT</h3>
     <p class="price">
       <span class="old-price">550 LE</span>
       <span class="new-price">450 LE</span>
     </p>
-
     <a class="order" href="pantsgray.html">ORDER</a>
   </div>
 
