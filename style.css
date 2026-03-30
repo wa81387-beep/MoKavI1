@@ -3499,4 +3499,6 @@ font-size:16px !important;
     padding: 8px !important;
   }
 }
-
+* {
+  outline: 1px solid red;
+}
