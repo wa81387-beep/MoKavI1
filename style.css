@@ -3645,3 +3645,13 @@ select:focus {
   object-fit: cover; /* مهم جدًا */
   display: block;
 }
+.hero {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.hero img {
+  width: 100vw; /* ياخد عرض الشاشة كله */
+  height: 100vh;
+}
