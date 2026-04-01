@@ -3738,3 +3738,53 @@ select:focus {
   }
 
 }
+
+
+@media (max-width: 600px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #cart-items {
+    width: 95%;
+    margin: auto;
+  }
+
+  .cart-item {
+    display: block !important; /* 🔥 الحل هنا */
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .cart-item img {
+    width: 100%;
+    max-width: 200px; /* تخليها مش ضخمة */
+    display: block;
+    margin: auto;
+  }
+
+  .cart-item h3,
+  .cart-item p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .qty-box {
+    justify-content: center;
+    display: flex;
+    margin: 10px 0;
+  }
+
+  .cart-item button {
+    display: block;
+    margin: 5px auto;
+  }
+
+  .cart-summary {
+    width: 95%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+}
