@@ -3624,17 +3624,15 @@ select:focus {
   border: 1px solid black; /* اللون اللي انتي عايزاه */
   box-shadow: none;
 }
-
-
-
-
-
-
-
-
-
-
-
+}
+.hero {
+  position: relative;
+  left: 0;
+  right: 0;
 }
 
+.hero img {
+  width: 100vw; /* ياخد عرض الشاشة كله */
+  height: 100vh;
+}
 
