@@ -3686,3 +3686,55 @@ select:focus {
   }
 
 }
+
+
+@media (max-width: 600px) {
+
+  /* منع خروج أي حاجة بره الشاشة */
+  body {
+    overflow-x: hidden;
+  }
+
+  #cart-items {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .cart-item {
+    display: flex;
+    flex-wrap: wrap; /* 🔥 دي أهم حاجة */
+    gap: 10px;
+  }
+
+  .cart-item img {
+    width: 70px;
+    height: auto;
+  }
+
+  /* خلي النص ياخد باقي المساحة */
+  .cart-item h3,
+  .cart-item p {
+    width: calc(100% - 80px);
+    font-size: 14px;
+  }
+
+  /* الكمية */
+  .qty-box {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  /* زرار الحذف */
+  .cart-item button {
+    margin-top: 5px;
+  }
+
+  /* الملخص */
+  .cart-summary {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+}
