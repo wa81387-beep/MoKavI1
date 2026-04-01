@@ -3682,47 +3682,4 @@ media (max-width: 600px) {
 
 }
 
-@media (max-width: 600px) {
 
-  #cart-items {
-    width: 85% !important;
-    max-width: 320px !important;
-    margin: 10px auto !important;
-    padding: 5px !important;
-  }
-
-  .cart-item {
-    display: flex !important;
-    align-items: center !important;
-    gap: 6px !important;
-  }
-
-  .cart-item img {
-    width: 50px !important;
-    height: auto;
-  }
-
-  .cart-item h3 {
-    font-size: 12px !important;
-  }
-
-  .cart-item p {
-    font-size: 11px !important;
-  }
-
-  .cart-summary {
-    width: 85% !important;
-    max-width: 320px !important;
-    margin: 10px auto !important;
-  }
-
-  .cart-summary h3 {
-    font-size: 13px !important;
-  }
-
-  .cart-summary button {
-    padding: 7px !important;
-    font-size: 13px !important;
-  }
-}
-  
