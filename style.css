@@ -3742,49 +3742,46 @@ select:focus {
 
 @media (max-width: 600px) {
 
-  body {
-    overflow-x: hidden;
-  }
-
   #cart-items {
     width: 95%;
     margin: auto;
+    box-sizing: border-box;
   }
 
   .cart-item {
-    display: block !important; /* 🔥 الحل هنا */
-    width: 100%;
-    margin-bottom: 15px;
+    flex-wrap: wrap; /* خلي العناصر تنزل تحت بعض لو ضاقت */
+    gap: 8px;
   }
 
   .cart-item img {
-    width: 100%;
-    max-width: 200px; /* تخليها مش ضخمة */
-    display: block;
-    margin: auto;
+    width: 55px; /* تصغير الصور على الموبايل */
+    height: auto;
   }
 
-  .cart-item h3,
+  .cart-item h3 {
+    font-size: 13px; /* تصغير النصوص */
+  }
+
   .cart-item p {
-    text-align: center;
-    font-size: 14px;
+    font-size: 12px;
   }
 
-  .qty-box {
-    justify-content: center;
-    display: flex;
-    margin: 10px 0;
-  }
-
-  .cart-item button {
-    display: block;
-    margin: 5px auto;
+  .qty-box button {
+    padding: 3px 6px; /* تصغير الأزرار شويه */
+    font-size: 12px;
   }
 
   .cart-summary {
     width: 95%;
-    margin: 20px auto;
-    text-align: center;
+    margin: 15px auto;
   }
 
+  .cart-summary h3 {
+    font-size: 14px;
+  }
+
+  .cart-summary button {
+    padding: 8px;
+    font-size: 14px;
+  }
 }
