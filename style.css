@@ -3754,7 +3754,7 @@ select:focus {
   }
 
   .cart-item img {
-    width: 55px; /* تصغير الصور على الموبايل */
+    width: 60px; /* تصغير الصور على الموبايل */
     height: auto;
   }
 
