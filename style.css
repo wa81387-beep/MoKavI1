@@ -3635,4 +3635,54 @@ select:focus {
   width: 100vw; /* ياخد عرض الشاشة كله */
   height: 100vh;
 }
+@media (max-width: 600px) {
 
+  /* الكارت كله */
+  #cart-items {
+    width: 95%;
+    margin: auto;
+  }
+
+  /* كل منتج */
+  .cart-item {
+    transform: scale(0.9); /* يصغر الشكل كله */
+    transform-origin: top center;
+    margin-bottom: 10px;
+  }
+
+  /* الصور */
+  .cart-item img {
+    width: 60px !important;
+  }
+
+  /* النصوص */
+  .cart-item h3 {
+    font-size: 14px !important;
+  }
+
+  .cart-item p {
+    font-size: 12px !important;
+  }
+
+  /* الأزرار */
+  .cart-item button {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  /* الملخص */
+  .cart-summary {
+    width: 95%;
+    margin: 15px auto;
+  }
+
+  .cart-summary h3 {
+    font-size: 14px;
+  }
+
+  .cart-summary button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+}
