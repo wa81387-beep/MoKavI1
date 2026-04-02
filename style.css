@@ -3640,3 +3640,12 @@ select:focus {
   height: auto; /* مهم جدًا */
   object-fit: contain; /* بدل cover */
 }
+@media (max-width: 600px) {
+
+  .cart-item img {
+    width: 55px;
+    height: auto;
+    object-fit: contain; /* يمنع القص */
+  }
+
+}
