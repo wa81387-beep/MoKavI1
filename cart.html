@@ -18,6 +18,27 @@
 
   <script>
 
+
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+const cartItems = document.getElementById("cart-items");
+const totalPriceEl = document.getElementById("total-price");
+
+function renderCart(){
+
+cartItems.innerHTML = "";
+let total = 0;
+
+cart.forEach((item,index)=>{
+
+total += item.price * item.qty;
+
+cartItems.innerHTML += `
+
+<div class="cart-item">
+
 <img src="${item.image}" width="80">
 
 <h3>${item.name}</h3>
@@ -27,46 +48,65 @@
 <p>Size: ${item.size}</p>
 
 <div class="qty-box">
-...
-</div>
-  <div class="cart-item">
 
-  <img src="${item.image}">
+<button onclick="changeQty(${index},-1)">-</button>
 
-  <div class="info">
-    <h3>${item.name}</h3>
-    <p>${item.price} LE</p>
-    <p>Size: ${item.size}</p>
-  </div>
+<span>${item.qty}</span>
 
-  <div class="qty-box">
-    <button onclick="changeQty(${index},-1)">-</button>
-    <span>${item.qty}</span>
-    <button onclick="changeQty(${index},1)">+</button>
-  </div>
+<button onclick="changeQty(${index},1)">+</button>
 
 </div>
-  cartItems.innerHTML += `
-<div class="cart-item">
 
-  <img src="${item.image}">
-
-  <div class="info">
-    <h3>${item.name}</h3>
-    <p>${item.price} LE</p>
-    <p>Size: ${item.size}</p>
-  </div>
-
-  <div class="qty-box">
-    <button onclick="changeQty(${index},-1)">-</button>
-    <span>${item.qty}</span>
-    <button onclick="changeQty(${index},1)">+</button>
-  </div>
-
-  <button onclick="removeItem(${index})">X</button>
+<button onclick="removeItem(${index})">Remove</button>
 
 </div>
+
 `;
+
+});
+
+totalPriceEl.innerText = total;
+
+}
+
+function changeQty(index,value){
+
+cart[index].qty += value;
+
+if(cart[index].qty < 1){
+cart[index].qty = 1;
+}
+
+localStorage.setItem("cart",JSON.stringify(cart));
+
+renderCart();
+
+}
+
+function removeItem(index){
+
+cart.splice(index,1);
+
+localStorage.setItem("cart",JSON.stringify(cart));
+
+renderCart();
+
+}
+
+
+renderCart();
+function goToCheckout(){
+  window.location.href = "contact.html";
+}
+function goToCheckout(){
+
+if(cart.length === 0){
+alert("Cart is empty");
+return;
+}
+
+window.location.href = "contact.html";
+}
   </script>
 </body>
 </html>
