@@ -3821,3 +3821,29 @@ cart-item {
   }
 
 }
+.cart-item img {
+  width: 60px;
+  height: auto; /* مهم جدًا */
+  object-fit: contain; /* يخلي الصورة كاملة */
+  display: block;
+}
+@media (max-width: 600px) {
+
+  .cart-item {
+    padding: 8px;
+    border-radius: 12px;
+  }
+
+  .cart-item img {
+    width: 55px;
+  }
+
+  .cart-item h3 {
+    font-size: 13px;
+  }
+
+  .cart-item p {
+    font-size: 11px;
+  }
+
+}
