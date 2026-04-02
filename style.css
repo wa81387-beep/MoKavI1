@@ -3790,36 +3790,11 @@ cart-item {
 
 
 
-@media (max-width: 600px) {
 
-  .cart-item {
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .cart-item img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .cart-item h3 {
-    font-size: 13px;
-  }
-
-  .cart-item p {
-    font-size: 11px;
-  }
-
-  .qty-box button {
-    width: 22px;
-    height: 22px;
-  }
-
-}
 @media (max-width: 600px) {
 
   #cart-items {
-    transform: scale(0.85); /* تصغير الكارت */
+    transform: scale(0.8); /* تصغير الكارت */
     transform-origin: top center; /* يفضل في النص */
     width: 100%;
     margin: auto;
