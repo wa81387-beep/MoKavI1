@@ -3635,3 +3635,8 @@ select:focus {
   width: 100vw; /* ياخد عرض الشاشة كله */
   height: 100vh;
 }
+.cart-item img {
+  width: 60px;
+  height: auto; /* مهم جدًا */
+  object-fit: contain; /* بدل cover */
+}
