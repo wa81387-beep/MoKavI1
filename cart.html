@@ -21,7 +21,15 @@
 
 <script>
 
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let cart = [
+  {
+    name: "TEST PRODUCT",
+    price: 500,
+    size: "XL",
+    image: "blackhoodi.jpg",
+    qty: 1
+  }
+];
 
 const cartItems = document.getElementById("cart-items");
 const totalPriceEl = document.getElementById("total-price");
