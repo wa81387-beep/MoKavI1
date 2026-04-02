@@ -3752,3 +3752,38 @@ select:focus {
   }
 
 }
+cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item img {
+  width: 60px;
+  height: auto;
+}
+
+.info {
+  flex: 1; /* يخلي النص ياخد المساحة الصح */
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+@media (max-width: 600px) {
+
+  .cart-item img {
+    width: 55px;
+  }
+
+  .info h3 {
+    font-size: 14px;
+  }
+
+  .info p {
+    font-size: 12px;
+  }
+
+}
