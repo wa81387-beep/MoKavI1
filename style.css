@@ -3719,11 +3719,7 @@ select:focus {
     font-size: 14px;
   }
 
-  /* الكمية */
-  .qty-box {
-    width: 100%;
-    margin-top: 5px;
-  }
+  
 
   /* زرار الحذف */
   .cart-item button {
