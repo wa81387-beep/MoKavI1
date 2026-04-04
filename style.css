@@ -3990,11 +3990,7 @@ section {
   height: auto !important;
   object-fit: contain !important;
 }
-/* يخلي المنتج باهت */
-.product.sold-out {
-  opacity: 0.6;
-  position: relative;
-}
+
 
 /* كلمة SOLD OUT */
 .product.sold-out::after {
