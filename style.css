@@ -3990,3 +3990,26 @@ section {
   height: auto !important;
   object-fit: contain !important;
 }
+/* يخلي المنتج باهت */
+.product.sold-out {
+  opacity: 0.6;
+  position: relative;
+}
+
+/* كلمة SOLD OUT */
+.product.sold-out::after {
+  content: "SOLD OUT";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: black;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.product.sold-out .order {
+  pointer-events: none;
+  background: #ccc;
+  color: #666;
+}
