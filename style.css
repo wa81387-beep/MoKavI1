@@ -6,6 +6,11 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 body {
   background: #ffffff;
   color: #111;
@@ -3929,4 +3934,29 @@ cart-item {
     height: 70px;
   }
 
+}
+.hero {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.hero img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+.cart-item img {
+  width: 70px;
+  height: auto; /* مهم */
+  object-fit: contain; /* أهم حاجة */
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 5px;
+}
+.cart-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
 }
